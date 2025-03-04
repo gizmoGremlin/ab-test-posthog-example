@@ -7,7 +7,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import App from './app';
 
 const options = {
-  api_host: import.meta.env.VITE_PUBLIC_POSTHOG_HOST,
+  api_host: import.meta.env.VITE_POSTHOG_HOST,
 };
 // ----------------------------------------------------------------------
 
@@ -18,7 +18,7 @@ root.render(
     <HelmetProvider>
       <BrowserRouter>
       <PostHogProvider
-          apiKey={import.meta.env.VITE_PUBLIC_POSTHOG_KEY}
+          apiKey={import.meta.env.VITE_POSTHOG_KEY}
           options={options}
         >
         <Suspense>
