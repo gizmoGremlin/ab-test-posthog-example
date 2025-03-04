@@ -1,10 +1,11 @@
 import ReactDOM from 'react-dom/client';
 import { Suspense, StrictMode } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
 import { PostHogProvider } from 'posthog-js/react';
+import { HelmetProvider } from 'react-helmet-async';
 
 import App from './app';
+
 const options = {
   api_host: import.meta.env.VITE_PUBLIC_POSTHOG_HOST,
 };
